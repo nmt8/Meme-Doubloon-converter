@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>Meme Doubloon converter</title>
+    </head>
+    <body bgcolor="7f5539">
+        <center>
+            <form name="comvertidor">
+            <h2>Meme Doubloon converter </h2> 
+            <img src="4 Doubloon.jpg">
+            <h2> Doubloon = 2,40€ </h2>
+            
+            <br > <font size ="8"> How many doubloons do i have : </font><input type="text" name="Doubloon" size=" 5" placeholder="Doubloons her">
+            <hr>
+            <br> <font size ="8"> Converted to euros ( € ) are :  </font><input type="text" name="euros"size=" 5" >
+            <br>
+            <br> <font size ="8"> Converted to dollar ( $ ) are :  </font><input type="text" name="dollar"size=" 5" >
+            <br><input type="button" value="Convert" onclick="calcular();">
+        </form>
+        <script type="text/javascript">
+            function calcular(){
+                var dobl = (document.comvertidor.Doubloon.value)*1;
+
+                var eur = dobl * 24 / 10;
+                var dole = dobl * 24.89 / 10
+
+                document.comvertidor.euros.value = eur;
+                document.comvertidor.dollar.value = dole;
+            }
+        </script>
+        </center>
+
+        
+    </body>
+    <footer>
+        <h1> Created by nmt8 </h1>
+        <br>
+        <font size="4" > WTF is this?? It’s a giant, internet-driven, communal role-play phenomenon.
+             <br> Here’s how it works: You scroll through TikTok until you bump into a dabloon video. 
+             <br>The video will use TikTok’s slideshow feature to flip through a series of images. 
+             <br>Each of these images will show off an item, and at the end 
+             <br>a cat will either offer or charge you dabloons in exchange for those items. </font>
+    </footer>
+</html>
